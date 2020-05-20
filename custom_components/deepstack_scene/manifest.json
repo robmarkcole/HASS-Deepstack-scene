@@ -1,0 +1,12 @@
+{
+        "domain": "deepstack_scene",
+        "name": "deepstack scene recognition",
+        "documentation": "https://github.com/robmarkcole/HASS-Deepstack-scene",
+        "requirements": [
+                "deepstack-python==0.5"
+        ],
+        "dependencies": [],
+        "codeowners": [
+                "@robmarkcole"
+        ]
+}
