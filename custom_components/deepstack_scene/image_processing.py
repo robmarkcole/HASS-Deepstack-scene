@@ -116,8 +116,4 @@ class SceneEntity(ImageProcessingEntity):
     @property
     def device_state_attributes(self):
         """Return device specific state attributes."""
-        attr = {}
-        if self._predictions != {}:
-            confidence = ds.format_confidence(self._predictions["confidence"])
-            attr["confidence"]: f"{confidence} %"
-        return attr
+        return self._predictions
