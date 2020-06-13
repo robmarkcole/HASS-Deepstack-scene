@@ -31,3 +31,6 @@ Configuration variables:
 
 ## Scenes info
 The 365 scenes are from the [Places365 dataset](http://places2.csail.mit.edu/). You can find them [in this list](https://github.com/zhoubolei/places_devkit/blob/master/categories_places365.txt).
+
+## Tensorflow lite alternative to deepstack
+As an experiment I created a drop in replacement for deepstack that uses tensorflow-lite models at https://github.com/robmarkcole/tensorflow-lite-rest-server. Note that the predictions differ from those provided by Deepstack, and are less accurate. However it runs on a raspberry pi without requiring hardware acceleration.
