@@ -85,13 +85,11 @@ class SceneEntity(ImageProcessingEntity):
         self._predictions = {}
 
         try:
-            self._dsscene.detect(image)
+            self._predictions = self._dsscene.recognize(image)
+            self._state = self._predictions["label"]
         except ds.DeepstackException as exc:
             _LOGGER.error("Deepstack error : %s", exc)
             return
-
-        self._predictions = self._dsscene.predictions.copy()
-        self._state = self._predictions["label"]
 
     @property
     def camera_entity(self):
