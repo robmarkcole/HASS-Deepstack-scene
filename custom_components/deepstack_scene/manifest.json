@@ -2,6 +2,7 @@
         "domain": "deepstack_scene",
         "name": "deepstack scene recognition",
         "documentation": "https://github.com/robmarkcole/HASS-Deepstack-scene",
+        "version": "0.5.0",
         "requirements": [
                 "deepstack-python==0.8"
         ],
